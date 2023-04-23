@@ -1,0 +1,65 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#root {
+   display: flex;
+   justify-content: left;
+}
+
+.App {
+   width: 90vw;
+}
+
+.post {
+   display: flex;
+   width: 800px;
+   padding: 15px;
+   border: 2px solid teal;
+   margin-top: 15px;
+   justify-content: space-between;
+}
+
+.post-enter {
+   opacity: 0;
+}
+
+.post-enter-active {
+   opacity: 1;
+   transition: opacity 500ms ease-in;
+}
+
+.post-exit {
+   opacity: 1;
+   scale: 1;
+}
+
+.post-exit-active {
+   opacity: 0;
+   scale: 0.2;
+   transition: 500ms linear;
+}
+
+.page {
+   padding: 5px 15px;
+   color: teal;
+   font-size: 14px;
+   border: 1px solid teal;
+   cursor: pointer;
+   margin: 10px;
+}
+
+.page__current {
+   border: 2px solid orange;
+   font-weight: bold;
+}
+
+.navbar {
+   height: 50px;
+   width: 100vw;
+   display: flex;
+   text-align: center;
+   padding: 0 15px;
+}
